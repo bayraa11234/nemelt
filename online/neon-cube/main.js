@@ -60,3 +60,5 @@ while (I<=A) {
     G=G*I;
     I++;
 } console.log(G);
+
+document.getElementsByTagName("img")[0].src = "https://i.natgeofe.com/n/506bcd08-37e0-4506-b4cc-328b028cdd8c/NationalGeographic_2683370_3x4.jpg";
