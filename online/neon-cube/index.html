@@ -8,104 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>document</title>
 </head>
-<style>
-    .box{
-        height: 150px;
-        width: 100%;
-        border-radius: 20px;
-        border: 1px solid yellow;
-        transition: 1s;
-
-        animation: blink 10s infinite;
-        -webkit-animation: blink 10s infinite;       
-    }
-    .box:hover{
-        background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    img{
-        width: 100%;
-    }
-    .mask{
-        display: flex;
-    }
-    .mask>img{
-        width: 400px;
-        -webkit-mask-image:linear-gradient(to top, transparent 25%,yellow 100%);
-        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-    }
-    p::first-letter{
-        font-size: 50px;
-        display: block;
-        float: left;
-        line-height: 0.5;
-        margin: 15px 15px 10px 0;
-    }
-    ::selection{
-        background-color: blue;
-    }
-    iframe{
-        width: 300px;
-        object-fit: cover;
-        clip-path: circle(50% at 50% 50%);
-    }
-    @keyframes blink{
-        0%{
-            background: red;
-        }
-        20%{
-            background: black;
-        }
-        40%{
-            background: yellow;
-        }
-        50%{
-            background: orange;
-        }
-        60%{
-            background: rgb(166, 99, 99);
-        }
-        75%{
-            background: rgb(185, 182, 24);
-        }
-        100%{
-            background: rgb(108, 192, 40);
-        }
-    }
-    @-webkit-keyframes blink{
-        0%{
-            background: red;
-        }
-        20%{
-            background: black;
-        }
-        40%{
-            background: yellow;
-        }
-        50%{
-            background: orange;
-        }
-        60%{
-            background: rgb(166, 99, 99);
-        }
-        75%{
-            background: rgb(185, 182, 24);
-        }
-        100%{
-            background: rgb(108, 192, 40);
-        }
-    }
-</style>
 <body>
-    <img src="https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg" alt="">
-
-    <div class="box"></div>
-    <div class="mask"><img src="https://imageio.forbes.com/specials-images/imageserve/5f962d31e7b04bbfd2f68758/Bugatti-Chiron-Super-Sport-300--Driving/960x0.jpg?height=473&width=711&fit=bounds" alt="">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M5QY2_8704o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate luctus metus, sed iaculis lectus imperdiet in. Maecenas nisl urna, porta at interdum vitae, scelerisque quis massa. Nunc tincidunt neque efficitur, scelerisque lectus vel, consequat velit. Aenean non tempor leo. Aenean sed velit diam. Vestibulum sollicitudin urna non cursus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus neque leo, tristique vitae sem at, pretium maximus nibh. Mauris nec gravida nunc. Etiam suscipit risus ut convallis ultricies.</p></div>
-
-
     <section>
         <div class="cube">
             <div class="top"></div>
@@ -114,60 +17,9 @@
                 <span style="--i:1"></span>
                 <span style="--i:2"></span>
                 <span style="--i:3"></span>
-        </div>
+            </div>
         </div>
     </section>
 
-
-    <footer>
-        <ul>
-            <li>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="fa fa-facebook-official" aria-hidden="true"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="fa fa-twitter" aria-hidden="true"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="fa fa-google-plus" aria-hidden="true"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span  class="fa fa-linkedin" aria-hidden="true"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="fa fa-instagram" aria-hidden="true"></span>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <script src="main.js"></script>
 </body>
 </html>

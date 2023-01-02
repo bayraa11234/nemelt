@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+}
+
+.box{
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    transition: 1s;
+
+    animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite;       
+}
+.box:hover{
+    background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg);
+    background-position: center;
+    background-size: cover;
+}
+img{
+    width: 100%;
+}
+.mask{
+    display: flex;
+}
+.mask>img{
+    width: 400px;
+    -webkit-mask-image:linear-gradient(to top, transparent 25%,yellow 100%);
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+p::first-letter{
+    font-size: 50px;
+    display: block;
+    float: left;
+    line-height: 0.5;
+    margin: 15px 15px 10px 0;
+}
+::selection{
+    background-color: blue;
+}
+iframe{
+    width: 300px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+@keyframes blink{
+    0%{
+        background: red;
+    }
+    20%{
+        background: black;
+    }
+    40%{
+        background: yellow;
+    }
+    50%{
+        background: orange;
+    }
+    60%{
+        background: rgb(166, 99, 99);
+    }
+    75%{
+        background: rgb(185, 182, 24);
+    }
+    100%{
+        background: rgb(108, 192, 40);
+    }
+}
+@-webkit-keyframes blink{
+    0%{
+        background: red;
+    }
+    20%{
+        background: black;
+    }
+    40%{
+        background: yellow;
+    }
+    50%{
+        background: orange;
+    }
+    60%{
+        background: rgb(166, 99, 99);
+    }
+    75%{
+        background: rgb(185, 182, 24);
+    }
+    100%{
+        background: rgb(108, 192, 40);
+    }
+}
+
+
+body>img{
+    height: 50vh;
+    background-image: center;
+    width: auto;
+}
+/* footer  start*/
+ul{                      
+    position: relative;
+    margin: 0;
+    padding:  0;
+    display: flex;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform:  rotate(-30deg) skew(25deg);
+    background-color: #ccc;
+}
+ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+ul li:hover span:nth-child(5){
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+ul li:hover span:nth-child(4){
+    transform: translate(30px,-30px);
+    opacity: .8;
+}
+ul li:hover span:nth-child(3){
+    transform: translate(20px,-20px);
+    opacity: .6;
+}
+ul li:hover span:nth-child(2){
+    transform: translate(10px,-10px);
+    opacity: .4;
+}
+ul li:hover span:nth-child(1){
+    transform: translate(0,0);
+    opacity: .2;
+}
+ul li:nth-child(1) span{
+   background-color: #3d5999;
+}
+ul li:nth-child(2) span{
+    background-color: #55acee;
+ }
+ ul li:nth-child(3) span{
+    background-color: #dd4b39;
+ }
+ ul li:nth-child(4) span{
+    background-color: #0077B5;
+ }
+ ul li:nth-child(5) span{
+    background-color: #e4405f;
+ }
+ /* footer end */
