@@ -18,6 +18,8 @@ function niilber(){
 }
 niilber();
 document.querySelector("#target").innerHTML = niilber();
+const del = document.getElementById("target");
+del.innerHTML = niilber();
 
 
 
