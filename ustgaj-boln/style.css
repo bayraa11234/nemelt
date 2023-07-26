@@ -1,3 +1,30 @@
-div{
-    background-color: black;
+*{
+    background-color: rgb(149, 180, 47);
+    transition-duration: 1s;
+}
+.p{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.3);
+    border-radius: 20px;
+}
+.active{
+    margin: 200px auto;
+    font-size: 20px;
+}
+.send-button{
+    background-color: rgb(42, 105, 160);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 0;
+}
+.send-input{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 30px;
+    padding: 0 10px;
 }
